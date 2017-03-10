@@ -1,0 +1,80 @@
+/* Empty. Add your own CSS if you like */
+
+body{
+	background-color:#FFE4C4;
+	font-familly:sans-serif;
+}
+
+.button{
+	float:right;
+}
+
+#clearAll{
+	float:center;
+	background:red;
+	color:yellow;
+	height:2.5em;
+	width:15em;
+	font-size:2em;
+}
+
+p{
+	font-size:20;
+	font-weight:bold;
+}
+
+h{
+	font-size:1.5em;
+	font-weight:bold;
+	text-align:center;
+}
+
+#tempSetUp{
+	 border: 1.5px solid ;
+	 text-align:right;
+	 font:5em;
+	 width:12.5%;
+	 height:10%;
+}
+
+#priceElec{
+	 border: 1.5px solid ;
+	 text-align:center;
+	 font:5em;
+	 width:15%;
+	 height:10%;
+}
+
+input,
+select,
+textarea{
+    display:inline-block !important;
+}
+
+#but{
+	width:27.5%;
+	height:27.5%;
+	float:right;
+	text-align:center;
+}
+
+#GPS{
+	float:left;
+	background:red;
+	color:yellow;
+	height:1em;
+	width:10em;
+	font-size:1em;
+	text-align:center;
+}
+
+.windows{
+	float:center;
+}
+
+input.airCavity{
+	display: inline;
+	padding:0;
+	height: 30px;
+	width: 30px;
+}
