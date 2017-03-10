@@ -1,0 +1,1 @@
+This is a simple website allowing the sale of items through the web

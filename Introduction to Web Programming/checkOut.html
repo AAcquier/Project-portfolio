@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Sports Shop</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.shop.js"></script>
+		<style>
+			body{
+				background-color:#FFE4C4;
+				}
+				
+			p3{
+				font-size:1.5em;
+				}
+			
+			p31{
+				font-size:1.5em;
+				color:red;
+				}
+				
+			#paymentType{
+				margin-left: 9em;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="site">
+			<header>
+				<title> The sport shop</title>
+				<a href="index.html"><h1><img src="logo.jpg" alt="The Lion Sport Shop logo" width="120" height="80"><br></br> The Lion Sports Shop</h1></a>
+				<h2> Check Out</h2>
+			</header>
+			<div id="total"><br>
+				<center><strong><p31 id="total2BPaid"> The total to be paid is &euro;_______ </p31></strong></center><br>
+			</div>
+			<div id="paymentType">
+				<strong><p3>Please Select Your Method Of Payment:</p3></strong><br><br>
+				<form required>
+					<!--this allow to select a payment type-->
+					<input type="radio" name="paymentProvider" value="Visa" id="v"> <strong>Visa</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="paymentProvider" value="Mastercard" id="m"> <strong>Mastercard </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="paymentProvider" value="VisaDebit" id="vd"><strong>Visa Debit</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="paymentProvider" value="Paypal" id="p"> <strong>Paypal</strong><br><br>
+					<strong><p3>Please enter the card and CVV number</p3></strong><br><br>
+					<!--This allow to input the card number-->
+					<strong>Card Number: <br></strong><input type="text" name="Cardnumber" value="" id="cn"><br><br>
+					<!--This allow to input the CVV number-->
+					<strong>CVV:      </strong>   <br><input type="text" name="Cardnumber" value="" id="cvv"><br><br>
+					<strong><p3>Please Enter The Name Of The Cardholder:</p3></strong><br><br>
+					<!--This allow to input the cardholder first name-->
+					<strong>First name:</strong><br>
+					<input type="text" name="firstname" value="" id="fn"><br><br>
+					<!--This allow to input the cardholder last name-->
+					<strong>Last name:</strong><br>
+					<input type="text" name="lastname" value="" id="ln"><br><br>
+					<!--This allow to input the address of the cardholder-->
+					<strong>Please Input The Adress Of The Cardholder:</strong><br>
+					<textarea rows="5" cols="50" id="add"></textarea><br>
+					<!--Button which allows the transfer of data for payment-->
+					<br><center><a href="confirmation.html" type="submit" value="Submit" onclick="finish()" class="btn"><font size ="5">Submit</font></a><center></br>
+				</form>
+			</div>
+			<footer>
+			Copyright &copy; The Lion Sports Shop 2016
+			</footer>
+		</div>
+    </body>
+</html>

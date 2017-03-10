@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Sports Shop</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.shop.js"></script>
+		<style>
+			body{
+				background-color:#FFE4C4;
+	
+				}
+			select {
+				border:0;
+				height:32px;
+				border:1px solid #d8d8d8;
+				overflow:visible;
+				width:125px;
+				-webkit-appearance: none;
+				font: 1em 'PT Serif', serif;
+				background: #f9f9f9;
+				color: #000;
+				border-radius: 3px;
+				margin-left: 0.4em;
+					}
+					
+			h1,h2{
+				color:#FF8C00;
+				}
+		</style>
+	</head>
+
+    <body>
+		<div id="site">
+			<header>
+				<title> The sport shop</title>
+				<a href="index.html"><h1><img src="logo.jpg" alt="The Lion Sport Shop logo" width="120" height="80"><br></br> The Lion Sports Shop</h1></a>
+				<h2> Tracksuits</h2>
+			</header>
+			<nav>
+				<a href="index.html">Home Page</a><br>
+				<a href="shoes.html">Shoes</a><br>
+				<a href="kits.html">Sports Kits</a><br> 
+				<a href="cart.html">Shopping Cart</a><br> 
+			</nav>
+			<section>
+				<!--This part handle the display for the first tracksuit item-->
+				<div id="content">
+					<div id="products" >
+						<ul>
+							<li>
+								<div class="product-description" data-name="trackSuits1" data-price="49">
+									<h3 class="product-name">NEW MENS NIKE tracksuit Jog Jogging FLEECE FULL ZIP Charcoal Green</h3>
+									<div class="col-lg-5"><center><img src="img/TSuit1.jpg" alt="Track Suit" width="380"height="215"></center></div>
+									<div class="col-lg-7"><p><font size="4">80% Polyester, 20% Cotton, Full zip Hooded Top, Elastic Waist Band, Two Side Pockets, Great Quality By NIKE</font></p></div>
+									<form class="add-to-cart" action="cart.html" method="post">
+										<!--This part allow to select the tracksuit size-->
+										<div class="col-lg-4"><p> Select Your Track Suit Size <br> 
+											<select name="TS_Size" class="TS1" onchange="priceTS1()"  id="testshoe">
+												<option value="">Please select a size</option>
+												<option value="49">Small</option>
+												<option value="49">Medium</option>
+												<option value="49">Large</option>
+												<option value="54">Extra Large</option>
+												<option value="54">Extra Extra Large</option>
+											</select>
+										</p></div>
+										<div class="col-lg-3"><p class="product-price" id="TS1Price">&euro; 49</p></div>
+										<!--This part allow to choose the quantity of the item needed-->
+										<div class="col-lg-4">
+											<label for="qty-1">Quantity</label>
+											<input type="text" name="qty-1" id="qty-4" class="qty" value="1" />
+										</div>
+										<!--This button allows to transfer the order to the cart-->
+										<p><input type="submit" value="Add to cart" class="btn" /></p>
+									</form>
+								</div>
+							</li>				
+						</ul>
+					</div>
+				</div>
+				<!--This part handle the display for the second tracksuit item-->
+				<div id="content">
+					<div id="products">
+						<ul>
+							<li>
+								<div class="product-description" data-name="trackSuits2" data-price="109">
+									<h3 class="product-name">2010-11 INTER MILAN NIKE WOVEN TRACKSUIT</h3>
+									<div class="col-lg-5"><center><img src="img/TSuit2.jpg" alt="Track Suit" width="380"height="215"></center></div>
+									<div class="col-lg-7"><p><font size="4">&quot;This item is part of the new Inter Milan training range which is manufactured by Nike and released for the 2010/11 Serie A season.&quot;</font></p></div>
+									<form class="add-to-cart" action="cart.html" method="post">
+										<!--This part allow to select the tracksuit size-->
+										<div class="col-lg-4"><p> Select Your Track Suit Size <br> 
+											<select name="TS_Size" class="TS2" onchange="priceTS2()" id="testshoe">
+												<option value="">Please select a size</option>
+												<option value="109">Small</option>
+												<option value="109">Medium</option>
+												<option value="109">Large</option>
+												<option value="119">Extra Large</option>
+												<option value="119">Extra Extra Large</option>
+											</select>
+										</p></div>
+										<div class="col-lg-3"><p class="product-price" id="TS2Price">&euro; 109</p></div>
+										<!--This part allow to choose the quantity of the item needed-->
+										<div class="col-lg-4">
+											<label for="qty-5">Quantity</label>
+											<input type="text" name="qty-5" id="qty-5" class="qty" value="1" />
+										</div>
+										<!--This button allows to transfer the order to the cart-->
+										<p><input type="submit" value="Add to cart" class="btn" /></p>
+									</form>
+								</div>
+							</li>				
+						</ul>
+					</div>
+				</div>
+				<!--This part handle the display for the third tracksuit item-->
+				<div id="content">
+					<div id="products">
+						<ul>
+							<li>
+								<div class="product-description" data-name="trackSuits3" data-price="79">
+									<h3 class="product-name">Nike Athletic Department Tracksuit</h3>
+									<div class="col-lg-5"><center><img src="img/TSuit3.jpg" alt="Track Suit" width="380"height="215">  </center></div>
+									<div class="col-lg-7"><p><font size="4">&quot;This mens tracksuit which consists of a full mesh lined track featuring two concealed zipped front pockets with contrast paneling.&quot;</font></p></div>
+									<form class="add-to-cart" action="cart.html" method="post">
+										<!--This part allow to select the tracksuit size-->
+										<div class="col-lg-4"><p> Select Your Track Suit Size <br> 
+											<select name="TS_Size" class="TS3" onchange="priceTS3()" id="testshoe">
+												<option value="">Please select a size</option>
+												<option value="79">Small</option>
+												<option value="79">Medium</option>
+												<option value="79">Large</option>
+												<option value="89">Extra Large</option>
+												<option value="89">Extra Extra Large</option>
+											</select>
+										</p></div>
+										<div class="col-lg-3"><p class="product-price" id="TS3Price">&euro; 79</p></div>
+										<!--This part allow to choose the quantity of the item needed-->
+										<div class="col-lg-4">
+											<label for="qty-1">Quantity</label>
+											<input type="text" name="qty-1" id="qty-6" class="qty" value="1" />
+										</div>
+										<!--This button allows to transfer the order to the cart-->
+										<p><input type="submit" value="Add to cart" class="btn" /></p>
+									</form>
+								</div>
+							</li>				
+						</ul>
+					</div>
+				</div>
+			</section>
+			<footer>
+				Copyright &copy; The Lion Sports Shop 2016
+			</footer>
+		</div>
+    </body>
+</html>
