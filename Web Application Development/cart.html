@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Shopping Cart</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<style>
+			.btn {
+				display: inline-block;
+				background: #cc1400;
+				color: #fff;
+				font: 1em 'PT Serif', serif;
+				padding: 0.3em 1em;
+				text-align: center;
+				border-radius: 4px;
+				border: 1px solid #a00;
+				height: 2em;
+				width: 100%;
+				}
+
+			a.btn {
+				display: inline-block;
+				background: #cc1400;
+				color: #fff;
+				font: 1em 'PT Serif', serif;
+				padding: 0.3em 1em;
+				text-align: center;
+				border-radius: 4px;
+				border: 1px solid #a00;
+				height: 1.5em;
+				width: 100%;
+				}
+				
+			.jumbotron {
+				display: inline-block;
+				background: #cc1400;
+				color: #fff;
+				font: 1em 'PT Serif', serif;
+				text-align: center;
+				border-radius: 4px;
+				border: 1px solid #a00;
+				height: 2em;
+				width: 36%;
+				}
+				
+				header{
+				font-size:1.3em;
+				background-color:#483D8B;
+				text-align:center;
+				margin-top: -10px;
+				margin-bottom: 0px;
+				margin-right: -8px;
+				margin-left: -8px;
+				padding:5px;
+				}
+		</style>	
+</head>
+
+<body id="namesListBody">
+	<header id="masthead">
+		<a href="index.html"><h1><img src="logo.jpg" alt="The Lion Sport Shop logo" width="120" height="80"></a><br></br> The Sports Shop</h1>
+		<h2> Shopping Cart</h2>
+	</header>
+	<div id="nameList"></div>		<!-- Where table is created-->
+	<script src="js/nameList.js" defer></script>
+	<p id="sub-total" name="total">
+		<strong>Sub Total</strong>: €<span id="stotal"></span> <!--Display the total of the shopping cart-->
+	</p>
+	<ul id="shopping-cart-actions">
+		<li>
+			<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" onclick="clearStorage()"/><!--Clear the session storage-->
+		</li>
+		<li>
+			<a href="index.html" class="btn">Continue Shopping</a>
+		</li>
+	</ul>
+	<center><div class = 'jumbotron'>
+		<a href="checkOut.html"><button type= 'btn' id="check out" class='btn btn-primary' name="check out">Check Out</button></a>
+	</div></center><br>
+	<footer>
+		Copyright &copy; The Sports Shop 2016
+	</footer>
+</body>
+</html>
