@@ -1,0 +1,2 @@
+//This line allows to send email through a batch file
+mailsend.exe -t alex.acquier@gmail.com -f systecsubmission@gmail.com -ssl -port 465 -auth -smtp smtp.gmail.com -sub “Windows automated emails” -M "System and networks Windows automated Emails" -user sysclass2016@gmail.com -pass systems2016
